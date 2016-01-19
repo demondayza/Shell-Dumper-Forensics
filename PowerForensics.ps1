@@ -12,7 +12,7 @@ Function Get-TitleBar ($Title, $BorderChar="-", $ForeColor = "Yellow", $BackColo
     Write-Host
 }
 
-Get-TitleBar "PowerShellForensics" 
+Get-TitleBar "Win7PowerShellForensics" 
 
 If (-NOT ([bool]((whoami /all) -match "S-1-16-12288"))){
   Write-Warning "$($Env:Username) is not an Administrator! Attempting to elevate the Script"
